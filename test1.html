@@ -1,0 +1,17 @@
+<html>
+<head>
+
+</head>
+<body>
+<video id="video" src="http://ips.ifeng.com/video19.ifeng.com/video09/2018/09/30/v48260288-102-9987625-124522.mp4?vid=95bce6cd-124e-443a-8147-6d8c5dad8bc6&uid=1537634234194_ekczfa5064&from=v_Free&pver=vHTML5Player_v2.0.0&sver=&se=疯笑院&cat=105-10057&ptype=105&platform=pc&sourceType=h5&dt=1538282643000&gid=E38KYWY-rBvF&sign=7de81b93ad10e9f417d19b79537f99b7&tm=1538666535877" type="video/mp4" controls></video><br/>
+<button onclick="capture()">Capture</button> <br/><br/>
+<canvas id="canvas"></canvas> <br/><br/>
+<script>
+function capture(){
+    var canvas = document.getElementById('canvas');
+    var video = document.getElementById('video');
+    canvas.getContext('2d').drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+}
+</script>
+</body>
+</html>
